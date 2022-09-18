@@ -1,12 +1,20 @@
 public class Selam {
-    String word = "Millet"; // isim girilmediği zaman miilet yazacağı için selam classında tanımladık
+    String word = "Millet";                                       // isim girilmediği zaman miilet yazacağı için selam classında tanımladık
 
-    public String SelamVer(String kisiyeSelamVer) {   // Selam vereceğimiz kişinin eylemini yaptık
-        String cumle;           // cümleyi geri dönüş için kullacağız
-        if (kisiyeSelamVer != "")    // eğer  selam vereceğimiz kişi boş ise cümleye ismi ata
+    public String SelamVer(String kisiyeSelamVer) {               // Selam vereceğimiz kişinin eylemini yaptık
+        String cumle;                                             // cümleyi geri dönüş için kullacağız
+        if (kisiyeSelamVer != "")                                 // eğer  selam vereceğimiz kişi boş ise cümleye ismi ata
             cumle = "Selam " + kisiyeSelamVer + " :)";
         else
-            cumle = "Selam " + word + " :)"; // eğer selam vereceğimiz kişi yoksa toplu mesaj ver
+            cumle = "Selam " + word + " :)";                      // eğer selam vereceğimiz kişi yoksa toplu mesaj ver
         return cumle;
+    }
+    public String selamSöyle(String selamSöyle){
+      String kelime;
+        if (selamSöyle != "")                                 // eğer  selam vereceğimiz kişi boş ise cümleye ismi ata
+            kelime = "Selam " + selamSöyle + " :)";
+        else
+            kelime = "Selam " + word + " :)";
+        return kelime;
     }
 }
